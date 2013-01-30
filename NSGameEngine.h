@@ -1,6 +1,6 @@
 #include "Camera.h"
 #include "Vector.h"
-#include "Data.h"
+#include "WorldObject.h"
 
 namespace GameEngine{
 
@@ -16,11 +16,11 @@ namespace GameEngine{
 #endif
 	
 	Camera camera;
-	int Create_World();
-	int Create_WEmpty(DIMENSION pos);
-	int Create_WObject(DIMENSION pos, DATA_TYPE data);
-	int Create_WLight(DIMENSION pos, int strength);
-	int Create_WBone(DIMENSION pos1, DIMENSION pos2);
+	WorldObject *Create_World();
+	WorldObject *Create_WEmpty(DIMENSION pos);
+	WorldObject *Create_WObject(DIMENSION pos, DATA_TYPE data);
+	WorldObject *Create_WLight(DIMENSION pos, int strength);
+	WorldObject *Create_WBone(DIMENSION pos1, DIMENSION pos2);
 	void hide_world_object(WorldObject *wo){
 		wo.hide();
 	}

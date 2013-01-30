@@ -5,8 +5,8 @@ namespace GameEngine{
 
 #include <vector>
 #include "Vector.h"
-#include "Material"
-#include "Data.h"
+#include "Material.h"
+//#include "Data.h"
 #include "NSGameEngine.h"
 
 #ifndef DIMENSION
