@@ -1,11 +1,12 @@
 #include "WorldObject.h"
 
-namespace GameEngine.h{
+namespace GameEngine{
 
-		WorldObject::WorldObject():TYPE(EMPTY), visible(true){
-
+		WorldObject::WorldObject(){
+			TYPE = EMPTY;
+			visible = true;
 		}
-		~WorldObject::WorldObject(){}
+		WorldObject::~WorldObject(){}
 		int WorldObject::render(){
 			return 0;
 		}

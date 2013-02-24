@@ -1,13 +1,13 @@
 
-namespace GameEngine{
-#ifndef __WORLDOBJECT__
-#define __WORLDOBJECT__
-
 #include <vector>
 #include "Vector.h"
 #include "Material.h"
 //#include "Data.h"
-#include "NSGameEngine.h"
+//#include "NSGameEngine.h"
+namespace GameEngine{
+#ifndef __WORLDOBJECT__
+#define __WORLDOBJECT__
+
 
 #ifndef DIMENSION
 #define DIMENSION Vector
@@ -31,10 +31,8 @@ namespace GameEngine{
 		bool visible;
 		Marterial material;
 		
+		WorldObject();
 
-		WorldObject():TYPE(EMPTY), visible(true){
-
-		}
 	public:
 		~WorldObject();
 		int getDataSize(){return Data.size();}
@@ -51,12 +49,12 @@ namespace GameEngine{
 		void setVisibity(bool v){visible = v;}
 		
 
-		friend Create_World();
+		/*friend Create_World();
 		friend Create_WEmpty();
 		friend Create_WObject();
 		friend Create_WLight();
 		friend Create_WBone();
-		friend Hide_WorldObject();
+		friend Hide_WorldObject();*/
 	};
 
 #endif

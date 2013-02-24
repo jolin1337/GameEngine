@@ -2,7 +2,7 @@
 #define _CAM_
 
 class Camera{
-	
+	int i;	
 
 };
 

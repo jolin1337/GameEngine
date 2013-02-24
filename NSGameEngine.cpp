@@ -18,7 +18,6 @@ namespace GameEngine{
 		return 0;
 	}
 	void hide_world_object(WorldObject *wo){
-		wo.hide();
+		wo->hide();
 	}
-
 };

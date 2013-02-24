@@ -2,7 +2,7 @@
 #define _MAT_
 
 class Material{
-	
+	int col;	
 };
 
 #endif
