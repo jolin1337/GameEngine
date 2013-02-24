@@ -9,6 +9,7 @@ namespace GameEngine{
 #define __WORLDOBJECT__
 
 
+
 #ifndef DIMENSION
 #define DIMENSION Vector
 #endif
@@ -17,19 +18,21 @@ namespace GameEngine{
 #define DATA_TYPE std::vector<DIMENSION *> 
 #endif
 
-#define EMPTY    1
-#define GEO      2
-#define BONE     3
-#define EMITION  4
+	enum WorldObjects_type {
+		EMPTY,
+		GEO,
+		BONE,
+		EMITION
+	};
 
 	class WorldObject{
 	private:
 		DIMENSION *position, *rotation, *scale;
 		std::vector<WorldObject *> children;
 		DATA_TYPE Data;
-		short TYPE;
+		WorldObjects_type TYPE;
 		bool visible;
-		Marterial material;
+		Material material;
 		
 		WorldObject();
 

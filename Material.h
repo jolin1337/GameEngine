@@ -1,8 +1,9 @@
 #ifndef _MAT_
 #define _MAT_
 
-class Material{
+class _Mat{
 	int col;	
 };
+typedef _Mat Material;
 
 #endif
